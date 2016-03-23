@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>DownloadWNR</servlet-name>
+        <servlet-class>lanka.downloadContent.DownloadVNR</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DownloadWallpaper</servlet-name>
+        <servlet-class>lanka.downloadContent.DownloadWallpaper</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DownloadAnimation</servlet-name>
+        <servlet-class>lanka.downloadContent.DownloadAnimation</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DownloadVideo</servlet-name>
+        <servlet-class>lanka.downloadContent.DownloadVideo</servlet-class>
+    </servlet>
+<servlet>
+        <servlet-name>DownloadGame</servlet-name>
+        <servlet-class>lanka.downloadContent.DownloadGame</servlet-class>
+</servlet>
+	<servlet>
+        <servlet-name>DownloadRingtone</servlet-name>
+        <servlet-class>lanka.downloadContent.DownloadRingtone</servlet-class>
+    </servlet>
+
+ <servlet>
+        <servlet-name>DownloadAll</servlet-name>
+        <servlet-class>lanka.downloadContent.DownloadAll</servlet-class>
+    </servlet>
+
+
+
+
+    <servlet-mapping>
+        <servlet-name>DownloadWNR</servlet-name>
+        <url-pattern>/DownloadWNR</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DownloadWallpaper</servlet-name>
+        <url-pattern>/DownloadWallpaper</url-pattern>
+    </servlet-mapping>
+
+	    <servlet-mapping>
+        <servlet-name>DownloadAnimation</servlet-name>
+        <url-pattern>/DownloadAnimation</url-pattern>
+    </servlet-mapping>
+
+	    <servlet-mapping>
+        <servlet-name>DownloadVideo</servlet-name>
+        <url-pattern>/DownloadVideo</url-pattern>
+    </servlet-mapping>
+<servlet-mapping>
+        <servlet-name>DownloadGame</servlet-name>
+        <url-pattern>/DownloadGame</url-pattern>
+</servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>DownloadRingtone</servlet-name>
+        <url-pattern>/DownloadRingtone</url-pattern>
+    </servlet-mapping>
+
+
+	<servlet-mapping>
+        <servlet-name>DownloadAll</servlet-name>
+        <url-pattern>/DownloadAll</url-pattern>
+    </servlet-mapping>
+
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
